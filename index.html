@@ -1,1 +1,75 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <div class="wrap">
+    <h1>Welcome, World Wide Web</h1>
+
+    <div class="auto-area">
+      <article>
+        <h2 class="hidden">clock area</h2>
+        <div id="clock">
+          <dl></dl>
+        </div>
+      </article>
+
+      <article>
+        <h2 class="hidden">quote area</h2>
+        <dl id="quote">
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </article>
+    </div>
+
+    <article class="fixed">
+      <h2 class="hidden">weather area</h2>
+      <div id="weather">
+        <span class="city"></span>
+        <span class="max"></span>
+        <span class="min"></span>
+      </div>
+    </article>
+  <div class="content">
+    <div class="left-box">
+      <article class="login-area">
+        <h2 class="hidden">login area</h2>
+        <p id="join"></p>
+        <form id="login-form">
+          <input type="text" placeholder="Write User Name">
+          <button type="submit">Login</button>
+        </form>
+      </article>
+
+      <article class="list-area">
+        <h2 class="hidden">To do list area</h2>
+        <form id="todo-form">
+          <input type="text" placeholder="write to do list" required>
+        </form>
+        <ul id="todo-list"></ul>
+      </article>
+    </div>
+      <article class="visual">
+        <img src="./images/image_2.jpg" alt="배경이미지">
+      </article>
+    </div>
+
+  </div>
+
+  <script src="./js/visual.js"></script>
+  <script src="./js/wether.js"></script>
+  <script src="./js/bg.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/quote.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/list.js"></script>
+</body>
+</html>
